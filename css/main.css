@@ -1356,8 +1356,9 @@ header .row {
 header .top-bar {
 	display: block;
 	background: #000000;
-	min-width: 220px;
+	min-width: 120px;
 	min-height: 66px;
+	width: 150px;
 	position: absolute;
 	left: 90px;
 	top: 0;
@@ -1379,10 +1380,10 @@ header .logo a {
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
-	width: 92px;
+	/* width: 92px;
 	height: 15px;
 	background: url("../images/logo.png") no-repeat center;
-	background-size: 92px 15px;
+	background-size: 92px 15px; */
 }
 
 /**
