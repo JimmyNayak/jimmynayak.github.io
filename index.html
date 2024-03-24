@@ -1,829 +1,809 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-  <!--<![endif]-->
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 
-  <head>
-    <!--- basic page needs
-   ================================================== -->
-    <meta charset="utf-8" />
-    <title>Jaymin Nayak</title>
-    <meta name="description" content="" />
-    <meta name="author" content="Jaymin Nayak" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- mobile specific metas
-   ================================================== -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
 
-    <!-- CSS
-   ================================================== -->
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/vendor.css" />
+  <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <!-- Custom Styles-->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Jaymin Nayak | Software Developer</title>
 
-    <!-- script
-   ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+</head>
 
-    <!-- Boot strap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+<body>
 
-    <!-- <script src="https://kit.fontawesome.com/bc069bd0b0.js"></script> -->
+  <!-- Navigation Menu-->
+  <!-- Nav class 1 -->
+  <nav class="hide-on-small-only">
+    <ul class="side-nav fixed section table-of-contents">
 
-    <!-- favicons
-	================================================== -->
-    <link rel="icon" type="image/png" href="icon.png" />
+      <li class="logo">
+        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+          <img src="assets/img/profile-pic.jpg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
 
-    <!-- Font reference
-	================================================== -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/v4-shims.css"
-    />
-  </head>
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
 
-  <body id="top">
-    <!-- header 
-   ================================================== -->
-    <header>
-      <div class="row">
-        <div class="top-bar">
-          <a class="menu-toggle" href="#"><span>Menu</span></a>
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
 
-          <div class="logo">
-            <a href="index.html">Jaymin</a>
+      <li class="bold">
+        <!--
+        ICONS:
+        mdi-action-assessment
+        mdi-social-poll
+        mdi-av-equalizer
+        -->
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+    
+      <li class="bold">
+        <!-- mdi-av-web small
+             mdi-av-my-library-books small-->
+        <a aria-label="Navigate to the Projects section" href="#blogs" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-create small"></i><span>Blogs</span></a>
+      </li>
+
+      <li class="bold">
+        <!-- 
+        1. mdi-communication-contacts
+        2. mdi-content-mail
+        3. mdi-communication-email
+        -->
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+
+      <li class="bold">
+        <!--
+        ICONS:
+        1. mdi-action-description
+        2. mdi-file-folder
+        3. mdi-file-folder-open
+        4. mdi-file-attachment
+        5. mdi-file-folder-shared
+        -->
+      
+        <a aria-label="Open Jaymin's resume in a new tab" href="assets/documents/CV.pdf" target="_blank"
+        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Jaymin Nayak</a><span class="black-text">Software Developer</span>
+    </div>
+  </nav>
+
+  <!-- Nav class 3 -->
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      <li class="bold">
+         
+        <a aria-label="Navigate to the Blog section" href="#blogs" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-create small"></i><span>Blogs</span></a>
+      </li>
+
+      <li class="bold">
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Open Jaymin's Resume in a new tab"
+          href="assets/documents/CV.pdf" target="_blank"
+          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="col-md-9">
+          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+            <div class="caption">
+              <h2>Namaste, I'm <span class="teal">Jaymin Nayak.</span></h2>
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#3DDC84"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+            </div>
+            <div class="social">
+              <a href="http://www.linkedin.com/in/jaymin-nayak" target="_blank">
+                <button class="icon-btn linkedin">
+                  <i class="fa fa-linkedin"></i>
+                </button>
+              </a>
+              <a href="https://github.com/JimmyNayak" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-github"></i>
+                </button>
+              </a>
+
+              <a href="https://twitter.com/jimmy_nayak" target="_blank">
+                <button class="icon-btn twitter">
+                  <i class="fa fa-twitter"></i>
+                </button>
+              </a>
+
+              <a href="https://medium.com/@JimmyNayak" target="_blank">
+                <button class="icon-btn github">
+                  <i class="fa fa-medium"></i>
+                </button>
+              </a>
+
+              <a href="https://www.quora.com/profile/Jimmy-2" target="_blank">
+                <button class="icon-btn quora">
+                  <i class="fa fa-quora"></i>
+                </button>
+              </a>
+
+              <a href="https://stackoverflow.com/users/5582190/jaymin" target="_blank">
+                <button class="icon-btn stackoverflow">
+                  <i class="fa fa-stack-overflow"></i>
+                </button>
+              </a>
+            </div>
+            <div class='buttons'>
+              <a href="#about" class="readme">Read More</a>
+              <a href="#contact" class="contactme">Contact Me</a>
+            </div>
           </div>
-
-          <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-              <li class="current">
-                <a class="smoothscroll" href="#intro" title="">Home</a>
-              </li>
-              <li><a class="smoothscroll" href="#about" title="">About</a></li>
-              <li>
-                <a class="smoothscroll" href="#resume" title="">Resume</a>
-              </li>
-              <!-- <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li> -->
-              <li><a class="smoothscroll" href="#blog" title="">Blogs</a></li>
-              <!-- <li><a class="smoothscroll" href="#services" title="">Services</a></li>
-						<li><a class="smoothscroll" href="#contact" title="">Contact</a></li> -->
-              <!-- <li><a href="styles.html" title="">Style Demo</a></li> -->
-            </ul>
-          </nav>
-        </div>
-        <!-- /top-bar -->
-      </div>
-      <!-- /row -->
-    </header>
-    <!-- /header -->
-
-    <!-- intro section
-   ================================================== -->
-    <section id="intro">
-      <div class="intro-overlay"></div>
-
-      <div class="intro-content">
-        <div class="row">
-          <div class="col-twelve">
-            <h5>Namaste</h5>
-            <h1>I'm Jaymin Nayak.</h1>
-
-            <p class="intro-position">
-              <span>Mobile Application Developer</span>
-              <!-- <span>UI/UX Designer</span>  -->
-            </p>
-
-            <a class="button stroke smoothscroll" href="#about" title=""
-              >More About Me <i class="fa fa-angle-down"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <!-- /intro-content -->
-
-      <ul class="intro-social">
-        <!-- <li><a title="Facebook" href="https://www.facebook.com/Jimmy.Nayak"><i class="fa fa-facebook fa-1x"></i></a></li> -->
-        <li>
-          <a title="LinkedIn" href="http://www.linkedin.com/in/jaymin-nayak"
-            ><i class="fa fa-linkedin fa-1x"></i
-          ></a>
-        </li>
-        <li>
-          <a title="Twitter" href="https://twitter.com/jimmy_nayak"
-            ><i class="fa fa-twitter fa-1x"></i
-          ></a>
-        </li>
-        <li>
-          <a title="GitHub" href="https://github.com/JimmyNayak"
-            ><i class="fa fa-github fa-1x"></i
-          ></a>
-        </li>
-        <!-- <li><a title="Instagram" href="https://www.instagram.com/jimmy_nayak/"><i class="fa fa-instagram fa-1x"></i></a></li> -->
-        <li>
-          <a title="Medium" href="https://medium.com/@JimmyNayak"
-            ><i class="fa fa-medium fa-1x"></i
-          ></a>
-        </li>
-        <li>
-          <a title="Quora" href="https://www.quora.com/profile/Jimmy-2"
-            ><i class="fa fa-quora fa-1x"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            title="StackOverflow"
-            href="https://stackoverflow.com/users/5582190/jaymin"
-            ><i class="fa fa-stack-overflow fa-1x"></i
-          ></a>
-        </li>
-        <!-- <li><a title="Youtube" href="https://www.youtube.com/channel/UCKnnM60U-vdnTufbkcwSGyw"><i class="fa fa-youtube fa-1x"></i></a> </li> -->
-        <li>
-          <a title="Email" href="mailto:iamironman.jimmy@gmail.com">
-            <i class="fa fa-envelope fa-1x"></i
-          ></a>
-        </li>
-        <!-- <li><a title="Skype" href="skype:jimmy.nayak19?chat/"> <i class="fa fa-skype fa-1x"></i> </a></li> -->
-        <!-- <li><a title="Download CV" href="/documents/CV.pdf"> <i class="fa fa-file-pdf fa-1x"></i> </a></li> -->
-      </ul>
-      <!-- /intro-social -->
-    </section>
-    <!-- /intro -->
-
-    <!-- about section
-   ================================================== -->
-    <section id="about">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>About</h5>
-          <h1>Let me introduce myself.</h1>
-
-          <div class="intro-info">
-            <img src="images/profile-pic.jpg" alt="Profile Picture" />
-
-            <p class="lead">
-              I am <b>Jaymin Nayak</b> from <b>India</b>. But everyone calls me
-              <b>JIMMY</b>! Jimmy the iron-born – First of his name, a
-              passionate about learning new Technologies, Self-Motivated, king
-              of sarcasm, die-hard IronMan fan, and above all –
-              <b> The Programmer</b>.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /section-intro -->
-
-      <div class="row about-content">
-        <div class="col-six tab-full">
-          <h3>Profile</h3>
-          <p>
-            I am a Senior mobile developer with 8+ years of experience in
-            creating native and cross-platform mobile applications in Xamarin,
-            and Android Studio.
-          </p>
-
-          <ul class="info-list">
-            <li>
-              <strong>Fullname:</strong>
-              <span>Jaymin Nayak</span>
-            </li>
-            <li>
-              <strong>Birth Date:</strong>
-              <span>September 19, 1991</span>
-            </li>
-            <li>
-              <strong>Job:</strong>
-              <span>Mobile Application Developer</span>
-            </li>
-            <li>
-              <strong>Website:</strong>
-              <span> https://jimmynayak.github.io</span>
-            </li>
-            <li>
-              <strong>Email:</strong>
-              <span>iamironman.jimmy@gmail.com</span>
-            </li>
-          </ul>
-          <!-- /info-list -->
-        </div>
-
-        <div class="col-six tab-full">
-          <h3>Skills</h3>
-          <p>
-            I've developed mobile applications using Java,Kotlin and C# for
-            native and cross-platform applications.
-          </p>
-
-          <ul class="info-list">
-            <li>
-              <strong>Android</strong>
-            </li>
-            <li>
-              <strong>Java</strong>
-            </li>
-            <li>
-              <strong>Kotlin</strong>
-            </li>
-            <li>
-              <strong>Xamarin</strong>
-            </li>
-            <li>
-              <strong>C#</strong>
-            </li>
-          </ul>
-          <!-- /skill-bars -->
-        </div>
-      </div>
-
-      <div class="row button-section">
-        <div class="col-twelve">
-          <a
-            href="#contact"
-            title="Hire Me"
-            class="button stroke"
-            style="display: none"
-            >Hire Me</a
-          >
-          <a
-            href="documents/CV.pdf"
-            title="Download CV"
-            class="button button-primary"
-            download
-            >Download CV</a
-          >
         </div>
       </div>
     </section>
-    <!-- /process-->
 
-    <!-- resume Section
-   ================================================== -->
-    <section id="resume" class="grey-section">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Resume</h5>
-          <h1>More of my credentials.</h1>
+    <!-- Second Section: About -->
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal">About</h3>
+      <div class="container flow-text">      
+        <p>
+        I am <b>Jaymin Nayak</b> from <b>India</b>. But everyone calls me <b>JIMMY</b>! Jimmy the iron-born – First of his name, a
+        passionate about learning new Technologies, Self-Motivated, king of sarcasm, die-hard IronMan fan, and above all –
+        <b> The Programmer</b>.</p>
+        <p>
+         I enjoy problem-solving and coding. Always strive to bring 100% to the work I do.
 
-          <p class="lead">
-            Currently, I'm working in an IT company as a Mobile Application
-            Developer. In my free time, I prefer new technologies and writing
-            blogs.
-          </p>
-        </div>
+          I have worked on technologies like <b>Android, Xamarin, Kotlin, Java, C#</b> . I have <b>8+ years</b> of professional work experience which helped me strengthen my experience in Mobile application development.
+
+          I am passionate about developing complex applications that solve real-world problems impacting millions of users.
+        </p>
+        <p>
+          <ul>
+            <li><b>Languages:</b> Java, Kotlin, C#</li>
+            <li><b>Databases:</b> SQLLight, Room</li>
+            <li><b>Libraries:</b> Android Support Library, Jetpack Compose, Dagger, ButterKnife, EventBus, RX Java, Firebase, Google Analytics,
+              Android Architecture Components, MVVM, Android BLE, Unit Testing</li>
+            <li><b>Tools & Technologies:</b> Android, Xamarin, Git, Android Studio, Visual Studio, Xamarin Studio, JIRA</li>
+          </ul>
+        </p>
+          
+        <p>
+          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
+        </p>
+       
       </div>
-      <!-- /section-intro-->
+    </section>
 
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Work Experience</h2>
-        </div>
-        <!-- /resume-header -->
 
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
+    <!-- Third Section: Experience -->
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal">Experience</h3>
+      <div class="container">
 
-              <div class="timeline-header">
-                <h3>Senior Software Engineer (ANDROID)</h3>
-                <p>Nov 2020 - Present</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Apexon</h4>
+        <!-- Latest Experience -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
                 <p>
-                  I am currently working at Apexon. My role is to developed
-                  mobile application as per the requirements.
+                  <span class="card-title"><a href="https://www.apexon.com/" target="_blank"
+                      class="teal-text hoverline">Apexon</a></span>
                 </p>
               </div>
             </div>
-            <!-- /timeline-block -->
+            <div class="role brown-text text-darken-2">Senior Software Engineer</div>
+            <ul>
+              <li>
+                I am currently working at Apexon. My role is to developed
+                mobile application as per the requirements.
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Nov 2020 - Present| Ahmedabad, India</span>
+          </div>
+        </div>
 
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Mobile Application Developer</h3>
-                <p>May 2015 - Oct 2020</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Agile Infoways</h4>
+        
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
                 <p>
-                  I was working at Agile Infoways since May 2015. My role was to
+                  <span class="card-title"><a href="https://www.agileinfoways.com/" target="_blank"
+                      class="teal-text hoverline">Agile Infoways</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Mobile Application Developer</div>
+            <ul>
+              <li>
+                I was working at Agile Infoways since May 2015. My role was to
                   communicate with client and developed mobile application as
                   per their requirement.
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>May 2015 - Oct 2020 | Ahmedabad, India</span>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="card">
+          <div class="card-content">
+            <div class="row">
+              <!-- <div class="col s12 m10"> -->
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://www.elsner.com/" class="teal-text hoverline">Elsner Technologies Pvt Ltd</a></span>
                 </p>
               </div>
             </div>
-            <!-- /timeline-block -->
-
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-briefcase"></i>
-              </div>
-
-              <div class="timeline-header">
-                <h3>Android Intern</h3>
-                <p>Dec 2014 - Apr 2015</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Elsner Technologies Pvt Ltd</h4>
-                <p>
-                  I was working at Elsner Technologies as an Android application
+            <div class="role brown-text text-darken-2">Android Intern</div>
+            <ul>
+              <li>
+                I was working at Elsner Technologies as an Android application
                   developer during this time I have learned android in more
                   depth and also developed one application.
-                </p>
-              </div>
-            </div>
-            <!-- /timeline-block -->
+              </li>
+            </ul>
           </div>
-          <!-- /timeline-wrap -->
+          <div class="card-action">
+            <span>Dec 2014 - Apr 2015 | Ahmedabad, India</span>
+          </div>
         </div>
-        <!-- /col-twelve -->
+
       </div>
-      <!-- /resume-timeline -->
+    </section>
 
-      <div class="row resume-timeline">
-        <div class="col-twelve resume-header">
-          <h2>Education</h2>
-        </div>
-        <!-- /resume-header -->
+    <!-- Fourth Section: Projects -->
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal">Projects</h3>
+      <div class="container">
+        <div class="row">
 
-        <div class="col-twelve">
-          <div class="timeline-wrap">
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="music streaming app" src="assets/img/android.svg" style="height: 100%; width: 100%" class="activator" />
               </div>
-
-              <div class="timeline-header">
-                <h3>Master Degree</h3>
-                <p>2012 - 2015</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Ahmedabad University</h4>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">COVID-19 Tracker<i
+                    class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  I have done my M.C.A (Master of Computer Applications) from
-                  Ahmedabad University. It is A three year long post-graduate
-                  course.
+                  A COVID-19 state tracker application.
                 </p>
               </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Android, Kotlin, MVVM, Navigation Component, Bottom navigation, Material Design, Android Architecture components, Retrofit, Dependency Injection using Koin</li>
+                  <li>User Information including Name and country to show COVID-19 state.</li>
+                  <li>Globle state screen for COVID-19.</li>
+                  <li>Country specific state screen.</li>
+                  <li>User Profile screen.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/JimmyNayak/COVID-19-Tracker-App"
+                    target="_blank" data-position="top" data-tooltip="View Source"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                </div>
+              </div>
             </div>
-            <!-- /timeline-block -->
+          </div>
 
-            <div class="timeline-block">
-              <div class="timeline-ico">
-                <i class="fa fa-graduation-cap"></i>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="assets/img/android.svg" style="height: 100%; width: 100%" class="activator" />
               </div>
-
-              <div class="timeline-header">
-                <h3>Bachelor Degree</h3>
-                <p>2009 - 2012</p>
-              </div>
-
-              <div class="timeline-content">
-                <h4>Gujarat University</h4>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Bostwick-Braun Hardware<i
+                    class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  I have done my B.C.A (Bachelor of Computer Applications) from
-                  Gujarat University. It is a 3 year undergraduate program in
-                  Computer applications.
+                  A Bostwick-Braun Hardware application
                 </p>
               </div>
-            </div>
-            <!-- /timeline-block -->
-          </div>
-          <!-- /timeline-wrap -->
-        </div>
-        <!-- /col-twelve -->
-      </div>
-      <!-- /resume-timeline -->
-    </section>
-    <!-- /features -->
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Xamarin.Android, Optimizely</li>
+                  <li>This is the Tools catalog application which allows users to view and place tooling orders along with delivery.  
+                  </li>
 
-    <!-- Portfolio Section
-   ================================================== -->
-    <section id="portfolio" style="display: none">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Portfolio</h5>
-          <h1>Check Out Some of My Works.</h1>
-
-          <p class="lead">The most popular projects of my repository.</p>
-        </div>
-      </div>
-      <!-- /section-intro-->
-
-      <div class="row blog-content">
-        <div class="card-deck">
-          <div class="card">
-            <img src="images/liberty.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5>Card title</h5>
-              <p>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/introduction-of-camerax-2518aa31569e"
-              >
-                View</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/liberty.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5>Card title</h5>
-              <p>
-                This card has supporting text below as a natural lead-in to
-                additional content.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/introduction-of-camerax-2518aa31569e"
-              >
-                View</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/liberty.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5>Card title</h5>
-              <p>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This card has even longer content
-                than the first to show that equal height action.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/introduction-of-camerax-2518aa31569e"
-              >
-                View</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /blog-content -->
-
-      <div class="row button-section">
-        <div class="col-fourteen">
-          <a
-            class="button button-primary large"
-            href="https://github.com/JimmyNayak?tab=repositories"
-          >
-            View more work</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- /portfolio -->
-
-    <!-- blog Section
-   ================================================== -->
-    <section id="blog" class="white-section">
-      <div class="row blog-content">
-        <div class="row section-intro">
-          <div class="col-twelve">
-            <h5>Blogs</h5>
-            <h1>I write my Thoughts</h1>
-
-            <p class="lead">
-              I spare time to write my thongs or what's new in the programming
-              world.
-            </p>
-          </div>
-        </div>
-        <!-- /section-intro -->
-        <div class="card-deck">
-          <div class="card">
-            <img
-              src="images/blog/blog_1.jpeg"
-              class="card-img-top"
-              alt="What’s new in Android at Google I/O 2019"
-            />
-            <div class="card-body">
-              <h5>What’s new in Android at Google I/O 2019</h5>
-              <p>
-                New things announced in I/O 2019 which is an annual developer
-                conference held by Google in Mountain View, California.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/whats-new-in-android-at-google-i-o-19-2a934e7f20a2"
-              >
-                View</a
-              >
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://play.google.com/store/apps/details?id=com.bostwickbraun.bostwickbraunhardware" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <img
-              src="images/blog/blog_2.png"
-              class="card-img-top"
-              alt="Introduction of CameraX"
-            />
-            <div class="card-body">
-              <h5>Introduction of CameraX</h5>
-              <p>
-                CameraX is a Jetpack support library, built to help you make
-                camera app development easier.
-              </p>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="assets/img/android.svg"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">OneTouch Reveal® app<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  ​The OneTouch Reveal® app can be used to track information from blood glucose meters to support diabetes management.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Android, MVVM, Jetpack Compose, Retrofit, Dagger</li>
+                  <li>The app seamlessly syncs data with the OneTouch Verio Reflect® meter and the OneTouch Verio Flex® meter to change the way you see your blood glucose./li>
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://play.google.com/store/apps/details?id=com.lifescan.reveal" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/introduction-of-camerax-2518aa31569e"
-              >
-                View</a
-              >
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="assets/img/android.svg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">FlintService<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  FlintService app is designed to enhance the technical support to customer.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Android, Retrofit</li>
+                  <li>FlintService app is designed to enhance the technical support we deliver to our customers, with instant access to our Technical and Commercial Representatives via call, video conferencing, chat, and as a platform to request tailor-made webinars.</li>
+                  <li>The App will enable us to provide customers with even more efficient technical service, answering any queries in real-time.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://play.google.com/store/apps/details?id=com.flintservice" target="_blank" data-position="top"
+                  data-tooltip="View Online"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                    class="fa fa-external-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <img
-              src="images/blog/gradle.jpg"
-              class="card-img-top"
-              alt="Documenting dependencies with Because"
-            />
-            <div class="card-body">
-              <h5>Documenting dependencies with Because</h5>
-              <p>
-                Because allows you to provide the custom reason to dependencies.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a
-                class="button stroke"
-                href="https://medium.com/@JimmyNayak/documenting-dependencies-with-because-2e1ac6e91c21"
-              >
-                View</a
-              >
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of  web app" src="assets/img/android.svg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Swamini Vato Study<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Swamini Vato, Mul Aksharmurti Gunatitanand Swami’s divine discourses, is an ocean of knowledge for spiritual seekers all over the world. 
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title brown-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li><b>Tools:</b> Android, Retrofit, Dagger</li>
+                  <li>This scripture, filled with teachings based on the eternal Vedic Akshar Purushottam Siddhant, is read regularly by thousands of devotees seeking worldly advice and spiritual wisdom.</li>
+                </ul>
+                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://play.google.com/store/apps/details?id=org.baps.swaminivatostudy" target="_blank" data-position="top"
+                  data-tooltip="View Online"
+                  class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                    class="fa fa-external-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- /blog-content -->
-
-      <div class="row button-section">
-        <div class="col-fourteen">
-          <a
-            class="button button-primary large"
-            href="https://medium.com/@JimmyNayak"
-          >
-            View more post</a
-          >
         </div>
       </div>
     </section>
-    <!-- /blog -->
 
-    <!-- contact
-   ================================================== -->
-    <section id="contact" style="display: none">
-      <div class="row section-intro">
-        <div class="col-twelve">
-          <h5>Contact</h5>
-          <h1>I'd Love To Hear From You.</h1>
-
-          <p class="lead">
-            Lorem ipsum Do commodo in proident enim in dolor cupidatat
-            adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
-            ipsum Consectetur ut in in eu do.
-          </p>
+    <!-- Fifth Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Technologies</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Android
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/xamarin.svg" class="responsive-img" />Xamarin
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/java.svg" class="responsive-img" />Java
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/kotlin.svg" class="responsive-img" />Kotlin
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/csharp.svg" class="responsive-img" />C#
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- /section-intro -->
 
-      <div class="row contact-form">
-        <div class="col-twelve">
-          <!-- form -->
-          <form name="contactForm" id="contactForm" method="post" action="">
-            <fieldset>
-              <div class="form-field">
-                <input
-                  name="contactName"
-                  type="text"
-                  id="contactName"
-                  placeholder="Name"
-                  value=""
-                  minlength="2"
-                  required=""
-                />
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Database</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/sqlite.svg" class="responsive-img" />SQLite
               </div>
-              <div class="form-field">
-                <input
-                  name="contactEmail"
-                  type="email"
-                  id="contactEmail"
-                  placeholder="Email"
-                  value=""
-                  required=""
-                />
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Room
               </div>
-              <div class="form-field">
-                <input
-                  name="contactSubject"
-                  type="text"
-                  id="contactSubject"
-                  placeholder="Subject"
-                  value=""
-                />
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mysql-logo-1.png" class="responsive-img" />MySQL
               </div>
-              <div class="form-field">
-                <textarea
-                  name="contactMessage"
-                  id="contactMessage"
-                  placeholder="message"
-                  rows="10"
-                  cols="50"
-                  required=""
-                ></textarea>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/mongodb.svg" class="responsive-img" />MongoDB
               </div>
-              <div class="form-field">
-                <button class="submitform">Submit</button>
-                <div id="submit-loader">
-                  <div class="text-loader">Sending...</div>
-                  <div class="s-loader">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />MVVM
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Dagger
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Hilt
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Koin
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />ButterKnife
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />EventBus
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />RX Java
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Firebase
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Google Analytics
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Flutter
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Android BLE
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Espresso
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Android Support Library
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />Mockito
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/android.svg" class="responsive-img" />JUnit
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications -->
+        <!-- <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Certificates</h4>
+            <div class="row text-left">
+              <div class="container">
+                <div class="row">
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/mooc-machine-learning-coursera-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Machine Learning (Stanford)</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m6 l6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="assets/img/mooc-algorithms-stanford-2-800x500.jpg">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title teal-text">Algorithms (Stanford)</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </fieldset>
-          </form>
-          <!-- Form End -->
-
-          <!-- contact-warning -->
-          <div id="message-warning"></div>
-          <!-- contact-success -->
-          <div id="message-success">
-            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+            </div>
           </div>
-        </div>
-        <!-- /col-twelve -->
+        </div> -->
+
       </div>
-      <!-- /contact-form -->
-
-      <div class="row contact-info">
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-pin"></i>
-          </div>
-
-          <h5>Where to find me</h5>
-
-          <p>
-            Ahmedabad,<br />
-            Gujarat,<br />
-            India
-          </p>
-        </div>
-
-        <div class="col-four tab-full collapse">
-          <div class="icon">
-            <i class="icon-mail"></i>
-          </div>
-
-          <h5>Email Me At</h5>
-
-          <p>iamironman.jimmy@gmail.com<br /></p>
-        </div>
-
-        <div class="col-four tab-full">
-          <div class="icon">
-            <i class="icon-phone"></i>
-          </div>
-
-          <h5>Call Me At</h5>
-
-          <p>Skype: jimmy.nayak19</p>
-        </div>
-      </div>
-      <!-- /contact-info -->
     </section>
-    <!-- /contact -->
 
-    <!-- footer
-   ================================================== -->
+     <!-- Sixth Section: blogs -->
+     <section id="blogs" class="section scrollspy">
+      <h3 class="page-title white-text teal">Blogs</h3>
+      <div class="container">
+        <div class="row">
 
-    <footer>
-      <div class="row">
-        <div class="col-thirteen tab-full pull-right social">
-          <ul class="footer-social">
-            <!-- <li><a title="Facebook" href="https://www.facebook.com/Jimmy.Nayak"><i class="fa fa-facebook fa-1x"></i></a></li> -->
-            <li>
-              <a title="LinkedIn" href="http://www.linkedin.com/in/jaymin-nayak"
-                ><i class="fa fa-linkedin fa-1x"></i
-              ></a>
-            </li>
-            <li>
-              <a title="Twitter" href="https://twitter.com/jimmy_nayak"
-                ><i class="fa fa-twitter fa-1x"></i
-              ></a>
-            </li>
-            <li>
-              <a title="GitHub" href="https://github.com/JimmyNayak"
-                ><i class="fa fa-github fa-1x"></i
-              ></a>
-            </li>
-            <!-- <li><a title="Instagram" href="https://www.instagram.com/jimmy_nayak/"><i class="fa fa-instagram fa-1x"></i></a></li> -->
-            <li>
-              <a title="Medium" href="https://medium.com/@JimmyNayak"
-                ><i class="fa fa-medium fa-1x"></i
-              ></a>
-            </li>
-            <li>
-              <a title="Quora" href="https://www.quora.com/profile/Jimmy-2"
-                ><i class="fa fa-quora fa-1x"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                title="StackOverflow"
-                href="https://stackoverflow.com/users/5582190/jaymin"
-                ><i class="fa fa-stack-overflow fa-1x"></i
-              ></a>
-            </li>
-            <!-- <li><a title="Youtube" href="https://www.youtube.com/channel/UCKnnM60U-vdnTufbkcwSGyw"><i class="fa fa-youtube fa-1x"></i></a> -->
-            <!-- </li> -->
-            <li>
-              <a title="Email" href="mailto:iamironman.jimmy@gmail.com">
-                <i class="fa fa-envelope fa-1x"></i
-              ></a>
-            </li>
-            <!-- <li><a title="Skype" href="skype:jimmy.nayak19?chat/"> <i class="fa fa-skype fa-1x"></i> </a></li> -->
-            <!-- <li><a title="Download CV" href="/documents/CV.pdf"> <i class="fa fa-file-pdf fa-1x"></i> </a></li> -->
-          </ul>
-        </div>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="What’s new in Android at Google I/O 2019" src="assets/img/blog/blog_1.jpeg" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">What’s new in Android at Google I/O 2019<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  New things announced in I/O 2019 which is an annual developer
+                  conference held by Google in Mountain View, California.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li> New things announced in I/O 2019 which is an annual developer
+                    conference held by Google in Mountain View, California.</li>
 
-        <!-- <div class="col-six tab-full">
-				<div class="copyright">
-					<span>© Copyright Kards 2016.</span>
-					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-				</div>
-			</div> -->
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://medium.com/@JimmyNayak/whats-new-in-android-at-google-i-o-19-2a934e7f20a2" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div id="go-top">
-          <a class="smoothscroll" title="Back to Top" href="#top"
-            ><i class="fa fa-long-arrow-up"></i
-          ></a>
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="quiz app" src="assets/img/blog/blog_2.png" style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Introduction of CameraX<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  CameraX is a Jetpack support library, built to help you make
+                camera app development easier.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>CameraX is a Jetpack support library, built to help you make
+                    camera app development easier.</li>
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit " href="https://medium.com/@JimmyNayak/introduction-of-camerax-2518aa31569e" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card medium">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img alt="Screenshot of web app" src="assets/img/blog/gradle.jpg"
+                style="height: 100%; width: 100%" class="activator" />
+              </div>
+              <div class="card-content">
+                <span class="card-title activator teal-text hoverline">Documenting dependencies with Because<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                <p>
+                  Because allows you to provide the custom reason to dependencies.
+                </p>
+              </div>
+              <div class="card-reveal">
+                <!-- TODO: change this -- only close button -->
+                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                <span class="card-title teal-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                <ul>
+                  <li>Because allows you to provide the custom reason to dependencies.</li>
+
+
+                </ul>
+                <div class="card-action">
+                  <a aria-label="Visit Blog website" href="https://medium.com/@JimmyNayak/documenting-dependencies-with-because-2e1ac6e91c21" target="_blank" data-position="top"
+                    data-tooltip="View Online"
+                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <!-- /row -->
-    </footer>
+    </section>
 
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
+    <!-- Eight Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+        <!-- <p>
+          <a aria-label="Call Jaymin" data-position="top" data-tooltip="Call Jaymin"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+              aria-label="Call Jaymin">+14805722456</a></a>
+        </p> -->
+        <p>
+          <a aria-label="Email Jaymin" href="mailto:iamironman.jimmy@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Jaymin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Jaymin" href="mailto:iamironman.jimmy@gmail.com"
+              class="hoverline">iamironman.jimmy@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Jaymin on GitHub" href="https://github.com/JimmyNayak" target="_blank"
+            data-position="top" data-tooltip="View Jaymin on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Jaymin on Github" href="https://github.com/JimmyNayak" class="hoverline"
+              target="_blank">github.com/JimmyNayak</a></a>
+        </p>
+        <p>
+          <a aria-label="View Jaymin on LinkedIn" href="http://www.linkedin.com/in/jaymin-nayak" target="_blank"
+            data-position="top" data-tooltip="View Jaymin on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Jaymin on LinkedIn" href="http://www.linkedin.com/in/jaymin-nayak"
+              class="hoverline" target="_blank">linkedin.com/in/jaymin-nayak</a></a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-    <!-- Java Script
-   ================================================== -->
-    <script src="js/jquery-2.1.3.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <!-- typed.js -->
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing',{
+      strings: ["Mobile Application Developer", "Fast Learner","Self-Churner","Knowledge Seeker"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 40
+    });
+  </script>
+
+
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
+</body>
+
 </html>
